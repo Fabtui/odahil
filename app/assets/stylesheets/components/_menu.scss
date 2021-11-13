@@ -44,7 +44,7 @@
 .nav-trigger:hover span,
 .nav-trigger:hover span::before,
 .nav-trigger:hover span::after {
-  background: rgb(230, 230, 230);
+  background: $white;
 }
 
 .nav-open .nav-trigger span {
@@ -95,7 +95,12 @@
   overflow: auto;
   transform: translateZ(0);
   transform: translateX(100%);
-  transition: transform .5s cubic-bezier(.07,.23,.34,1);
+  transition: all .5s cubic-bezier(.07,.23,.34,1);
+  opacity: 0;
+}
+
+.nav-open .nav-container {
+  opacity: 1;
 }
 
 .nav-open .nav-container {
