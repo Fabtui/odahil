@@ -17,7 +17,7 @@
   position: absolute;
   height: 4px;
   width: 36px;
-  background: #999999;
+  background: $white;
 }
 
 .nav-trigger span {
@@ -71,7 +71,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #1C1D21;
+  background: $black;
   opacity: 0;
   visibility: hidden;
   transition: opacity .5s, visibility .5s;
@@ -91,7 +91,7 @@
   width: 300px;
   max-width: 460px;
   padding: 2em 3.5em;
-  background: #F3F3F3;
+  background: $white;
   overflow: auto;
   transform: translateZ(0);
   transform: translateX(100%);
@@ -127,7 +127,7 @@
   padding: .4em 0;
   font-size: 32px;
   text-decoration: none;
-  color: #1F2B3D;
+  color: $black;
   transform: translateZ(0);
   transition: 0.2s;
   padding: 20px;
