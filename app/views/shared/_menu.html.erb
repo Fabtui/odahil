@@ -12,7 +12,7 @@
     <li class="link-line"><a href="#0">Portfolio</a></li>
     <li class="link-line"><a href="#0">Gallery</a></li>
     <li class="link-line"><a href="#0">Contact</a></li>
-    <% if current_user %>
+    <% if user_signed_in? %>
       <li class="link-line"><a href="#0">Admin</a></li>
     <% end %>
   </ul>
