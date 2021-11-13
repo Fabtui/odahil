@@ -11,3 +11,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: rgb(20, 20, 20);
+  color: rgb(220, 220, 220);
+  font-weight: 300;
+}
