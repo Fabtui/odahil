@@ -1,11 +1,11 @@
 <div class="home-logo">
   <% if user_signed_in? %>
     <%= link_to destroy_user_session_path, method: :delete do %>
-      <%= image_tag ("test-logo0.jpg") %>
+      <%= image_tag ("lion-logo0.png") %>
     <% end %>
   <% else %>
     <%= link_to new_user_session_path do %>
-      <%= image_tag ("test-logo0.jpg") %>
+      <%= image_tag ("lion-logo0.png") %>
     <% end %>
   <% end %>
 </div>
