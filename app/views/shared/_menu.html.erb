@@ -1,9 +1,21 @@
 <div class="menu">
-<a href="#navigation" class="nav-trigger">
-  Menu <span></span>
-</a>
+
+  <a href="#navigation" class="nav-trigger">
+    <span></span>
+  </a>
 
 <nav class="nav-container" id="navigation">
+  <div class="sign-in-link">
+      <% if user_signed_in? %>
+        <%= link_to destroy_user_session_path, method: :delete do %>
+          <i class="fas fa-sign-out-alt"></i>
+        <% end %>
+      <% else %>
+        <%= link_to new_user_session_path do %>
+          <i class="fas fa-sign-in-alt hidden-link"></i>
+        <% end %>
+      <% end %>
+    </div>
   <%# <header>
     <h2></h2>
   </header> %>

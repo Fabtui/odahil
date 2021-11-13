@@ -1,3 +1,22 @@
+.sign-in-link {
+  position: absolute;
+  i {
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.808);
+    transform: translateY(3px);
+    transition: 0.2s;
+    &:hover {
+      color: black;
+      transform: scale(1.1);
+      transition: 0.2s;
+    }
+  }
+}
+
+.hidden-link {
+  opacity: 0;
+}
+
 .nav-trigger {
   position: fixed;
   z-index: 4;
