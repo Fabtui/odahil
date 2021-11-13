@@ -18,3 +18,17 @@
     text-shadow: 0 0 4px black;
   }
 }
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.home-page-content h1 {
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
