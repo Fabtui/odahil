@@ -8,6 +8,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import { showMenu } from "../components/_show_menu"
+import { homeSwiper } from "../components/_home_swiper"
 
 Rails.start()
 Turbolinks.start()
@@ -26,7 +27,6 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
   showMenu();
+  homeSwiper();
 });
