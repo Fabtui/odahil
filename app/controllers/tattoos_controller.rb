@@ -1,5 +1,11 @@
 class TattoosController < ApplicationController
+  skip_before_action :authenticate_user!, only: [ :index, :show ]
+
   def index
+    @tattoos = Tattoo.all
+  end
+
+  def dashboard
     @tattoos = Tattoo.all
   end
 
