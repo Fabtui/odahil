@@ -5,6 +5,8 @@
       <%= f.input :name %>
       <%= f.input :customer %>
       <%= f.input :date, discard_hour: true,
+                              start_year: Date.today.year - 7,
+                              end_year: Date.today.year,
                               order: [:day, :month, :year] %>
       <%= f.input :description, as: :text %>
       <% comment do %>
