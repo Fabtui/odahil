@@ -1,0 +1,71 @@
+.tattoo-list-element {
+  display: flex;
+  width: 100%;
+  background-color: $white;
+  margin: 12px 0;
+  color: $black;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.tattoo-list-element-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+  }
+}
+
+.tattoo-list-element-content {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tattoo-list-element-infos {
+  font-size: 20px;
+}
+
+.tattoo-list-element-name {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.tattoo-list-element-onhomepage h3 {
+  font-size: 16px;
+  padding: 4px;
+  border: 1px solid black;
+}
+
+.tattoo-list-element-actions {
+  margin: 8px;
+  a {
+    color: $white;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tattoo-list-element-image {
+    width: 100px;
+    height: 100px;
+  }
+  .tattoo-list-element-content {
+    padding: 8px;
+  }
+  .tattoo-list-element-infos {
+  font-size: 12px;
+  }
+  .tattoo-list-element-description {
+    display: none;
+  }
+  .tattoo-list-element-onhomepage h3 {
+    font-size: 12px;
+    padding: 4px;
+    border: 1px solid black;
+  }
+}

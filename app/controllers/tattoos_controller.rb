@@ -18,8 +18,12 @@ class TattoosController < ApplicationController
   end
 
   def create
-    @tattoo = Tatoo.new(tatoo_params)
-    @tattoo.save
+    @tattoo = Tattoo.new(tattoo_params)
+    if @tattoo.save
+      redirect_to tattoos_dashboard_path
+    else
+      render :new
+    end
   end
 
   def edit
@@ -30,7 +34,7 @@ class TattoosController < ApplicationController
     @tattoo = Tattoo.find(params[:id])
     @tattoo.update(tattoo_params)
     if @tattoo.save
-      redirect_to :root
+      redirect_to tattoos_dashboard_path
     else
       render :edit
     end
@@ -45,6 +49,6 @@ class TattoosController < ApplicationController
   private
 
   def tattoo_params
-    params.require(:tattoo).permit(:id, :date, :name, :description, :customer, :on_home_slider)
+    params.require(:tattoo).permit(:id, :date, :name, :description, :customer, :on_home_slider, photos: [])
   end
 end

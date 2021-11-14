@@ -1,6 +1,6 @@
 <div class="new-tattoo-container">
   <div class="new-tattoo-form">
-    <h1>Add a new tattoo</h1>
+    <h1>Edit this tattoo</h1>
     <%= simple_form_for @tattoo do |f| %>
       <%= f.input :name %>
       <%= f.input :customer %>
@@ -14,7 +14,7 @@
       <%= f.input :photos, as: :file, label:"Photo 2", input_html: { multiple: true } %>
       <%= f.input :photos, as: :file, label:"Photo 3", input_html: { multiple: true } %>
       <%= f.input :photos, as: :file, label:"Photo 4", input_html: { multiple: true } %>
-      <%= f.input :on_home_slider, label:"En page d'accueil"  %>
+      <%= f.input :on_home_slider, label:"En page d'accueil" %>
       <%= f.submit "Save", class: "btn btn-primary" %>
     <% end %>
   </div>
