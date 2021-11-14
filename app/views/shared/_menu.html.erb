@@ -25,7 +25,7 @@
     <li class="link-line"><a href="#0">Gallery</a></li>
     <li class="link-line"><a href="#0">Contact</a></li>
     <% if user_signed_in? %>
-      <li class="link-line"><a href="#0">Admin</a></li>
+      <li class="link-line"><%= link_to 'Admin', tattoos_path %></li>
     <% end %>
   </ul>
 </nav>
