@@ -34,3 +34,12 @@
   height: 100%;
   object-fit: cover;
 }
+
+:root {
+  --swiper-theme-color: rgba(255, 0, 0, 0.521) !important;
+}
+
+
+.swiper-pagination {
+  bottom: 85px !important;
+}
