@@ -4,7 +4,7 @@ const homeAutoYScroll = () => {
 
     function downScrollToSwiper() {
       const currentPosition = window.scrollY;
-      const firstPoint = window.innerHeight*0.7;
+      const firstPoint = window.innerHeight*0.8;
       const secondPoint = window.innerHeight;
       if (currentPosition > firstPoint && currentPosition < secondPoint) {
         window.scroll({
@@ -14,19 +14,33 @@ const homeAutoYScroll = () => {
       }
     }
 
+    function downUpToTop() {
+      const currentPosition = window.scrollY;
+      const firstPoint = 0;
+      const secondPoint = window.innerHeight*0.2;
+      if (currentPosition > firstPoint && currentPosition < secondPoint) {
+        window.scroll({
+          top: firstPoint,
+          behavior: "smooth"
+        });
+      }
+    }
+
     let lastScrollTop = 0;
 
-    window.addEventListener("scroll", () => {
+    function scrollDirection() {
       let state = window.pageYOffset || document.documentElement.scrollTop;
       if (state > lastScrollTop){
         // scroll down behaviour
         downScrollToSwiper();
       } else {
-        // scroll up behaviour
+        downUpToTop()
       }
       lastScrollTop = state <= 0 ? 0 : state; // For Mobile or negative scrolling
-    }, false);
+    }
 
+
+    window.addEventListener("scroll", scrollDirection, false);
   }
 }
 

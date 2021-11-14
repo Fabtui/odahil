@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-
+  z-index: 10;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +36,7 @@
 }
 
 :root {
-  --swiper-theme-color: rgba(255, 0, 0, 0.521) !important;
+  --swiper-theme-color: $white !important;
 }
 
 
