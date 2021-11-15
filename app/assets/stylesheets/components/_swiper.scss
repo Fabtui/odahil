@@ -26,6 +26,7 @@
 
 .swiper-button-prev:after, .swiper-button-next:after {
   transform: translateY(50vh);
+  opacity: 0.5;
 }
 
 .swiper-slide img {
