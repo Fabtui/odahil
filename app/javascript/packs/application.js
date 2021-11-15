@@ -10,6 +10,7 @@ import "channels"
 import { showMenu } from "../components/_show_menu"
 import { homeSwiper } from "../components/_home_swiper"
 import { homeAutoYScroll } from "../components/_home_auto_yscroll"
+import { dashboardLightbox } from "../components/_dashboard_lightbox"
 
 Rails.start()
 Turbolinks.start()
@@ -31,4 +32,5 @@ document.addEventListener('turbolinks:load', () => {
   showMenu();
   homeSwiper();
   homeAutoYScroll();
+  dashboardLightbox();
 });
