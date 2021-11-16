@@ -12,11 +12,23 @@
       <% comment do %>
         <%= f.input :style, collection: ['Réaliste', 'Traditionel', 'Autre'] %>
       <% end %>
-      <%= f.input :photos, as: :file, label:"Photo 1", input_html: { multiple: true }, hint:"This will be the main picture", require: true %>
-      <%= f.input :photos, as: :file, label:"Photo 2", input_html: { multiple: true } %>
-      <%= f.input :photos, as: :file, label:"Photo 3", input_html: { multiple: true } %>
-      <%= f.input :photos, as: :file, label:"Photo 4", input_html: { multiple: true } %>
-      <%= f.input :on_home_slider, label:"En page d'accueil"  %>
+      <div class="photo-upload-container">
+        <%= f.input :photos, as: :file, label:"📷 Photo 1", label_html: { class: 'upload-photo'}, input_html: { class: '1', id:'photo-input' }, hint:"This will be the main picture", require: true %>
+        <%= image_tag "", width: 300, class: "hidden", id: "photo-preview-1" %>
+      </div>
+      <div class="photo-upload-container">
+        <%= f.input :photos, as: :file, label:"📷 Photo 2", label_html: { class: 'upload-photo'}, input_html: { class: '2', id:'photo-input' } %>
+        <%= image_tag "", width: 300, class: "hidden", id: "photo-preview-2" %>
+      </div>
+      <div class="photo-upload-container">
+        <%= f.input :photos, as: :file, label:"📷 Photo 3", label_html: { class: 'upload-photo'}, input_html: { class: '3', id:'photo-input' } %>
+        <%= image_tag "", width: 300, class: "hidden", id: "photo-preview-3" %>
+      </div>
+      <div class="photo-upload-container">
+        <%= f.input :photos, as: :file, label:"📷 Photo 4", label_html: { class: 'upload-photo'}, input_html: { class: '4', id:'photo-input' } %>
+        <%= image_tag "", width: 300, class: "hidden", id: "photo-preview-4" %>
+      </div>
+      <%= f.input :on_home_slider, id:"new-tattoo-checkbox" %>
       <%= f.submit "Save", class: "btn btn-primary" %>
     <% end %>
   </div>

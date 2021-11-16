@@ -1,0 +1,17 @@
+.upload-photo {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: $white;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.photo-upload-container {
+  border: 1px solid #d3d3d3;
+  padding: 4px;
+}
+
+.text-muted {
+  text-align: center;
+  color: red !important;
+}
