@@ -11,6 +11,7 @@ import { showMenu } from "../components/_show_menu"
 import { homeSwiper } from "../components/_home_swiper"
 import { homeAutoYScroll } from "../components/_home_auto_yscroll"
 import { dashboardLightbox } from "../components/_dashboard_lightbox"
+import { previewImageOnFileSelect } from "../components/_upload_photo_preview"
 
 Rails.start()
 Turbolinks.start()
@@ -33,4 +34,5 @@ document.addEventListener('turbolinks:load', () => {
   homeSwiper();
   homeAutoYScroll();
   dashboardLightbox();
+  previewImageOnFileSelect();
 });
