@@ -8,3 +8,27 @@
     font-weight: 300;
   }
 }
+
+.dashboard-selection {
+  justify-content: center;
+  display: flex;
+}
+
+.dashboard-selection-button {
+  margin: 12px;
+  width: 100px;
+  text-align: center;
+  padding: 8px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.active {
+  border-bottom: 2px solid $white;
+  animation-delay: .2s;
+}
+
+.dashboard-hidden {
+  display: none;
+}
