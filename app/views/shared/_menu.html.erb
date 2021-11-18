@@ -23,7 +23,7 @@
   <ul class="nav">
     <li><%= link_to 'Odahil', pages_profile_path, class:'link-line' %></li>
     <li><%= link_to 'Gallery', tattoos_path, class:'link-line' %></li>
-    <li><a href="#0" class="link-line">Art</a></li>
+    <li><%= link_to 'Art', arts_path, class:'link-line' %></li>
     <li><a href="#0" class="link-line">Contact</a></li>
     <% if user_signed_in? %>
       <li><%= link_to 'Admin', tattoos_dashboard_path, class:"link-line" %></li>

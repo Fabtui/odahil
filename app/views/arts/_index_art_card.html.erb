@@ -1,0 +1,10 @@
+<% @arts.each do |art| %>
+  <div class="tattoo-card">
+    <div class="tattoo-card-content">
+      <div class="tattoo-card-image lightbox-img">
+        <%= cl_image_tag art.photos.first.key, crop: :fill, id:"tattoo-list-picture" %>
+        <span id="lines"></span>
+      </div>
+    </div>
+  </div>
+<% end %>
