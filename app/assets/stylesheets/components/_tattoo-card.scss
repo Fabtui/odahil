@@ -1,0 +1,24 @@
+.tattoo-card {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.tattoo-card-image {
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
+    border-radius: 5px;
+    // filter: grayscale(1);
+  }
+  img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    // filter: grayscale(0);
+    transition: 0.2s;
+  }
+}
