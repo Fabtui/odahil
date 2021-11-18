@@ -3,7 +3,8 @@
     <div class="tattoo-card-content">
       <div class="tattoo-card-image lightbox-img">
         <%= cl_image_tag tattoo.photos.first.key, crop: :fill, id:"tattoo-list-picture" %>
+        <span id="lines"></span>
       </div>
-   </div>
+    </div>
   </div>
 <% end %>

@@ -24,6 +24,14 @@
   }
 }
 
-.tattoo-card-infos {
-  z-index: 99;
+#tattoo-list-picture {
+  position: relative;
+}
+
+#lines {
+  width: 230px;
+  height: 230px;
+  transform: translate(10px, 10px);
+  border: 2px solid rgba(0, 0, 0, 0.295);
+  position: absolute;
 }

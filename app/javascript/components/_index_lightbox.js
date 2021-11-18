@@ -11,16 +11,19 @@ const indexLightbox = () => {
     lightboxImage.forEach( image => {
       image.addEventListener('click', () => {
         const imageURL = image.querySelector("img").src;
+        const closeIcon = previewBox.querySelector(".details-icon");
         previewImg.src = imageURL;
         previewBox.classList.add("show");
         shadow.style.display = "block";
 
-        const closeIcon = previewBox.querySelector(".details-icon");
-        closeIcon.addEventListener('click', () => {
+        function closePreviewBox () {
           previewBox.classList.remove("show");
           shadow.style.display = "none";
           document.querySelector("body").style.overflow = "scroll";
-        })
+        }
+
+        closeIcon.addEventListener('click', () => closePreviewBox())
+        shadow.addEventListener('click', () => closePreviewBox())
       })
     })
   }
