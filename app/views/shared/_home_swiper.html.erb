@@ -2,7 +2,7 @@
   <div class="swiper-wrapper">
     <% @tattoos = Tattoo.all %>
     <% @tattoos.each do |tattoo| %>
-      <% if tattoo.photos.first.key && tattoo.on_home_slider %>
+      <% if tattoo.photos.first && tattoo.on_home_slider %>
       <div class="swiper-slide">
         <%= cl_image_tag tattoo.photos.first.key, crop: :fill %>
       </div>
