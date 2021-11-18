@@ -1,31 +1,30 @@
 .profile-container {
-  padding: 10%;
+  padding: 5% 10%;
   h1 {
     font-weight: 300;
+  }
+  img {
+    border-radius: 5px;
   }
 }
 
 .profile-content {
   display: flex;
   margin: 100px 0;
-  overflow: hidden;
-  h2 {
-    font-weight: 300;
-  }
-  img {
-    border-radius: 5px;
-    box-shadow: 4px 4px 10px black;
-  }
+  // overflow: hidden;
 }
 
 .profile-picture {
   height: 60vh;
+  box-shadow: 4px 4px 10px black;
 }
 
 .profile-content-text {
   padding: 10%;
+  h2 {
+    font-weight: 300;
+  }
 }
-
 .contact-link a {
   display: flex;
   justify-content: center;
@@ -70,42 +69,43 @@
   }
 
   // ----------------------CORNERS--------------------------------
-
-h2 {
-  position: relative;
-}
-h2:before {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 30px;
-  top: -10px;
-  left: -16px;
-  z-index:-1;
-  border-left: 1px solid $white;
-  border-top: 1px solid $white;
-}
-h2:after {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 30px;
-  right: -16px;
-  bottom: -10px;
-  z-index:-1;
-  border-right: 1px solid $white;
-  border-bottom: 1px solid $white;
-}
-
-// ------------------------RESPONSIVE---------------------------
-
-@media screen and (max-width: 1150px) {
-  .profile-content-text {
-  padding: 5%;
+.profile-content-text {
+  h2 {
+    position: relative;
   }
-  .profile-content {
-    h2 {
-      font-size: 24px;
+  h2:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    left: -16px;
+    z-index:-1;
+    border-left: 1px solid $white;
+    border-top: 1px solid $white;
+  }
+  h2:after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    right: -16px;
+    bottom: -10px;
+    z-index:-1;
+    border-right: 1px solid $white;
+    border-bottom: 1px solid $white;
+  }
+
+  // ------------------------RESPONSIVE---------------------------
+
+  @media screen and (max-width: 1150px) {
+    .profile-content-text {
+    padding: 5%;
+    }
+    .profile-content {
+      h2 {
+        font-size: 24px;
+      }
     }
   }
 }
