@@ -4,6 +4,7 @@
   overflow: hidden;
   margin: 20px;
   justify-content: space-between;
+  border-radius: 5px;
 }
 
 .tattoo-card-image {
@@ -13,12 +14,12 @@
     width: 100%;
     transition: 0.2s;
     border-radius: 5px;
-    // filter: grayscale(1);
+    filter: grayscale(0.2);
   }
   img:hover {
     transform: scale(1.1);
     cursor: pointer;
-    // filter: grayscale(0);
+    filter: grayscale(0);
     transition: 0.2s;
   }
 }
