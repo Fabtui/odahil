@@ -1,0 +1,18 @@
+<div class="new-tattoo-container">
+  <div class="new-tattoo-form">
+    <h1>Edit the artwork</h1>
+    <%= simple_form_for @art do |f| %>
+      <%= f.input :name %>
+      <%= f.input :description, as: :text %>
+      <% comment do %>
+        <%= f.input :style, collection: ['Réaliste', 'Traditionel', 'Autre'] %>
+      <% end %>
+      <div class="photo-upload-container">
+        <%= f.input :photos, as: :file, label:"📷 Photo 1", label_html: { class: 'upload-photo'}, input_html: { class: '1', id:'photo-input', multiple: true }, require: true %>
+        <%= image_tag "", width: 300, class: "hidden", id: "photo-preview-1" %>
+      </div>
+      <hr>
+      <%= f.submit "Save", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
