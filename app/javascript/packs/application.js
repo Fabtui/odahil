@@ -13,6 +13,7 @@ import { homeAutoYScroll } from "../components/_home_auto_yscroll"
 import { dashboardLightbox } from "../components/_dashboard_lightbox"
 import { previewImageOnFileSelect } from "../components/_upload_photo_preview"
 import { indexLightbox } from "../components/_index_lightbox"
+import { slideInImages } from "../components/_slide_in_images"
 
 Rails.start()
 Turbolinks.start()
@@ -37,4 +38,5 @@ document.addEventListener('turbolinks:load', () => {
   dashboardLightbox();
   previewImageOnFileSelect();
   indexLightbox();
+  slideInImages();
 });
