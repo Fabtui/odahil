@@ -43,7 +43,7 @@ class TattoosController < ApplicationController
   def destroy
     @tattoo = Tattoo.find(params[:id])
     @tattoo.destroy
-    redirect_to tattoos_path
+    redirect_to tattoos_dashboard_path
   end
 
   private
