@@ -3,13 +3,15 @@
     <h1>ADMIN DASHBOARD</h1>
   </div>
   <div class="dashboard-selection">
-    <div class="dashboard-selection-tattoos">Tattoos</div>
-    <div class="dashboard-selection-tattoos">Arts</div>
+    <div class="dashboard-selection-button select-tattoos active">Tattoos</div>
+    <div class="dashboard-selection-button select-arts">Arts</div>
   </div>
-  <div class="dashboard-actions">
+  <div class="dashboard-tattoos">
     <%= link_to "Ajouter un nouveau tattoo", new_tattoo_path, class:'btn btn-primary' %>
-    <%= link_to "Ajouter un nouveau dessin", new_art_path, class:'btn btn-primary' %>
+    <%= render 'dashboard_tattoos_list' %>
   </div>
-<%= render 'dashboard_tattoos_list' %>
-<%= render 'dashboard_arts_list' %>
+  <div class="dashboard-arts dashboard-hidden">
+    <%= link_to "Ajouter un nouvel artwork", new_art_path, class:'btn btn-primary' %>
+    <%= render 'dashboard_arts_list' %>
+  </div>
 </div>
