@@ -2,6 +2,7 @@
       width: 100%;
       height: 100vh;
       overflow: hidden;
+      margin-bottom: 44px;
     }
 
 .swiper-slide {
@@ -40,9 +41,8 @@
   --swiper-theme-color: $white !important;
 }
 
-
 .swiper-pagination {
-  bottom: 85px !important;
+  bottom: 150px !important;
 }
 
 .swiper-pagination-bullet {
