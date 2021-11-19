@@ -1,0 +1,12 @@
+<div class="contact-create-container">
+  <% flash.each do |key, value| %>
+    <div class="flash">
+      <h3>Merci <%= @contact.name %>!</h3>
+      <h3>J'ai bien reçu ton message, je reviens vers toi très rapidement.</h3>
+      <h3 id="contact-signature">Odahil</h3>
+      <div class="contact-create-back-button">
+        <%= link_to "Retour", root_path, class:"btn btn-primary" %>
+      </div>
+    </div>
+  <% end %>
+</div>
