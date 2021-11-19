@@ -7,17 +7,11 @@ footer {
 		background: black;
 		overflow: hidden;
 		padding-bottom: 20px;
+    display: flex;
 		text-align: center;
-		ul {
-			margin: 0;
-			padding: 0;
-		}
-		li {
-      display: inline;
-			margin: 0 20px;
-			padding: 0;
-		}
+    justify-content: center;
 		a {
+      margin: 20px;
       border-bottom: 0px solid rgba(0,0,0,0.95);
 			border-radius: 4px;
 			box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0), 0 6px 8px rgba(0,0,0,0), 0 24px 24px rgba(0,0,0,0), 0 36px 36px rgba(0,0,0,0), 0 64px 64px rgba(0,0,0,0), 0 64px 128px rgba(0,0,0,0), 0 120px 0 rgba(0,0,0,0), 0 86px 8px 6px rgba(0,0,0,0),;
@@ -28,7 +22,7 @@ footer {
 			transition: .2s ease-in;
       width: 30px;
 			svg {
-        left: 20px;
+        left: 5px;
         position: absolute;
         top: 20px;
 				height: 30px;
