@@ -104,7 +104,7 @@ flamme = Art.create!(
   name: "Flamme",
   description: "La flamme olympique des enfers"
 )
-flamme.photos.attach(io: File.open('app/assets/images/art7.jpg'), filename: 'flamme.jpg', content_type:'image/jpg')
+flamme.photos.attach(io: File.open('app/assets/images/art8.jpg'), filename: 'flamme.jpg', content_type:'image/jpg')
 
 p "#{User.count} users created"
 p "#{Tattoo.count} Tattoos created"

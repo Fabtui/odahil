@@ -1,7 +1,7 @@
 const homeAutoYScroll = () => {
-  const swiperContainer = document.querySelector('.swiper-container')
-  if (swiperContainer) {
-
+  const homePage = document.querySelector('.home-page-content')
+  if (homePage) {
+    const swiperContainer = document.querySelector('.swiper-container')
     function downScrollToSwiper() {
       const currentPosition = window.scrollY;
       const firstPoint = window.innerHeight*0.8;
