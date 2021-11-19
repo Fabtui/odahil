@@ -9,6 +9,11 @@ const showMenu = () => {
       event.preventDefault();
       body.classList.toggle('nav-open');
     }
+
+    const overlay = document.querySelector('.overlay')
+    overlay.addEventListener('click', () => {
+      body.classList.remove('nav-open');
+    })
   }
 }
 
