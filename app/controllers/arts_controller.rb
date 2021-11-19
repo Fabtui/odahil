@@ -16,7 +16,7 @@ class ArtsController < ApplicationController
   def create
     @art = Art.new(art_params)
     if @art.save
-      redirect_to tattoos_dashboard_path
+      redirect_to pages_dashboard_path
     else
       render :new
     end
@@ -30,7 +30,7 @@ class ArtsController < ApplicationController
     @art = Art.find(params[:id])
     @art.update(art_params)
     if @art.save
-      redirect_to tattoos_dashboard_path
+      redirect_to pages_dashboard_path
     else
       render :edit
     end
@@ -39,7 +39,7 @@ class ArtsController < ApplicationController
   def destroy
     @art = Art.find(params[:id])
     @art.destroy
-    redirect_to tattoos_dashboard_path
+    redirect_to pages_dashboard_path
   end
 
   private
