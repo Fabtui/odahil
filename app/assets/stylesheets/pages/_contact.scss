@@ -1,0 +1,66 @@
+.contact-new-container {
+  padding: 10% 20%;
+}
+
+.contact-new-text {
+  text-align: center;
+  h4 {
+    font-size: 24px;
+  }
+}
+
+// -------------------------Create--------------------------------
+
+.contact-create-container {
+  padding: 15% 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+  #contact-signature {
+    text-align: right;
+  }
+}
+
+.contact-create-back-button {
+  padding-top: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 750px) {
+  .contact-create-container {
+    padding: 50% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    #contact-signature {
+      text-align: right;
+  }
+ }
+}
+
+
+@media screen and (max-width: 750px) {
+  .contact-new-container {
+    padding: 40% 10% 10% 10%;
+  }
+  .contact-new-text {
+    margin-bottom: 32px;
+    h4 {
+      font-size: 12px;
+    }
+  }
+  .required {
+    font-size: 12px;
+  }
+}
