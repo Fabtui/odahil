@@ -27,7 +27,6 @@ const slideInImages = () => {
           const isHalfShown = slideInAt > sliderImage.offsetTop;
           const isNotScrolledPast = window.scrollY < imageBottom;
           if ( isHalfShown && isNotScrolledPast ) {
-            console.log('ok')
             sliderImage.classList.add('active')
           } else {
             sliderImage.classList.remove('active')
