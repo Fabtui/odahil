@@ -28,7 +28,7 @@
       </div>
       <div class="tattoo-list-element-actions">
         <%= link_to edit_tattoo_path(tattoo.id), class:"btn btn-success" do %>
-          <i class="fas fa-edit"></i>
+          <i class="fas fa-pencil-alt"></i>
         <% end %>
         <%= link_to tattoo_path(tattoo.id), class:"btn btn-danger", method: 'delete', data: { confirm: 'Are you sure?' } do %>
           <i class="fas fa-trash"></i>
