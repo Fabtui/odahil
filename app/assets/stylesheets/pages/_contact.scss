@@ -1,5 +1,5 @@
 .contact-new-container {
-  padding: 10% 40%;
+  padding: 10% 30%;
 }
 
 .contact-new-text {
@@ -11,17 +11,11 @@
 }
 
 @media screen and (max-width: 1150px) {
-  .contact-new-container {
-    padding: 20%;
-  }
   .contact-new-text {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     h4 {
-      font-size: 16px;
+      font-size: 20px;
     }
-  }
-  .required {
-    font-size: 12px;
   }
 }
 
