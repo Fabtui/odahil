@@ -34,4 +34,7 @@
   transform: translate(10px, 10px);
   border: 2px solid rgba(0, 0, 0, 0.295);
   position: absolute;
+  &:hover {
+    cursor: pointer;
+  }
 }
