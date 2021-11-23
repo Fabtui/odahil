@@ -1,5 +1,13 @@
 .contact-create-container {
-  padding: 15% 20%;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-create-content {
+  padding: 60px 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,8 +29,8 @@
 
 
 @media screen and (max-width: 750px) {
-  .contact-create-container {
-    padding: 50% 10%;
+  .contact-create-content {
+    padding: 0 10%;
     display: flex;
     align-items: center;
     justify-content: center;

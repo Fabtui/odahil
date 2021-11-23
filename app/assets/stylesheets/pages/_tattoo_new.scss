@@ -23,6 +23,16 @@
   margin-bottom: 60px;
 }
 
+.photo-upload-container {
+  text-align: center;
+  img {
+    margin: 0 auto;
+    max-height: 250px;
+    width: auto;
+    max-width: 300px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .new-tattoo-container {
     padding: 120px 20px 40px 20px;
