@@ -12,7 +12,10 @@
         <%= image_tag "", width: 300, class: "hidden", id: "photo-preview-1" %>
       </div>
       <hr>
-      <%= f.submit "Save", class: "btn btn-primary" %>
+      <div class="tattoo-new-button">
+        <%= f.submit "Save", class: "btn btn-primary" %>
+        <%= link_to "Cancel", pages_dashboard_path , class: "btn btn-danger" %>
+      </div>
     <% end %>
   </div>
 </div>

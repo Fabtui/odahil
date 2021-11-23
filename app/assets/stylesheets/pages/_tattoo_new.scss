@@ -3,3 +3,23 @@
   display: flex;
   justify-content: center;
 }
+.form-check {
+  margin: 20px 0;
+}
+
+.tattoo-new-button {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .new-tattoo-container {
+    padding: 120px 12px 40px 12px;
+    margin-bottom: 24px;
+    h1 {
+      font-size: 28px;
+    }
+  }
+}

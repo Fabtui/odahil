@@ -35,7 +35,7 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   showMenu();
   homeSwiper();
-  homeAutoYScroll();
+  // homeAutoYScroll();
   dashboardLightbox();
   previewImageOnFileSelect();
   indexLightbox();
