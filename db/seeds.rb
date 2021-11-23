@@ -1,8 +1,26 @@
 User.destroy_all
 Tattoo.destroy_all
 Art.destroy_all
+Style.destroy_all
+
+# ---------------------------------STYLES-------------------------------------------------------
+
+types = %w[Abstrait Aquarelle Asiatique Biomécanique Cartoon Couleur Cover Dot\ Work Esquisse Fantasy Floral
+           Géométrique Graphique Lettrage Line\ Work Mandala Néo-Traditionnel New\ School Noir\ et\ Blanc Old\
+           School Ornemental Polynésien Portait Réaliste Skull Traditionel Trash]
+
+types.each do |type|
+  Style.create!(name: type)
+end
+
+# ---------------------------------USERS-------------------------------------------------------
+
 
 User.create!(email: "toto@mail.com", password: "azerty")
+
+
+# ---------------------------------TATTOOS-------------------------------------------------------
+
 
 puppet = Tattoo.create!(
   name: "Puppet",
@@ -58,6 +76,10 @@ geo = Tattoo.create!(
 )
 geo.photos.attach(io: File.open('app/assets/images/tattoo5.jpg'), filename: 'geo.jpg', content_type:'image/jpg')
 
+
+# ---------------------------------ARTS-------------------------------------------------------
+
+
 loup = Art.create!(
   name: "Loup",
   description: "Un loup mal barré"
@@ -106,6 +128,11 @@ flamme = Art.create!(
 )
 flamme.photos.attach(io: File.open('app/assets/images/art8.jpg'), filename: 'flamme.jpg', content_type:'image/jpg')
 
+
+
+# --------------------------------------------------------------------------------------------------
+
 p "#{User.count} users created"
 p "#{Tattoo.count} Tattoos created"
 p "#{Art.count} Artworks created"
+p "#{Style.count} Styles created"

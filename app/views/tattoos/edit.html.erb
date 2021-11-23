@@ -9,9 +9,7 @@
                               end_year: Date.today.year,
                               order: [:day, :month, :year] %>
       <%= f.input :description, as: :text %>
-      <% comment do %>
-        <%= f.input :style, collection: ['Réaliste', 'Traditionel', 'Autre'] %>
-      <% end %>
+      <%= f.association :styles %>
       <%= f.input :photos, as: :file, label:"Photo 1", input_html: { multiple: true }, hint:"This will be the main picture", require: true %>
       <%= f.input :photos, as: :file, label:"Photo 2", input_html: { multiple: true } %>
       <%= f.input :photos, as: :file, label:"Photo 3", input_html: { multiple: true } %>

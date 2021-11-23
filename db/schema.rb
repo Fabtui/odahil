@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_19_084326) do
+ActiveRecord::Schema.define(version: 2021_11_23_165218) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,6 +56,21 @@ ActiveRecord::Schema.define(version: 2021_11_19_084326) do
     t.string "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "styles", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tattoo_styles", force: :cascade do |t|
+    t.bigint "tattoo_id"
+    t.bigint "style_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["style_id"], name: "index_tattoo_styles_on_style_id"
+    t.index ["tattoo_id"], name: "index_tattoo_styles_on_tattoo_id"
   end
 
   create_table "tattoos", force: :cascade do |t|
