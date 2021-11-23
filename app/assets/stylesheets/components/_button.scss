@@ -4,3 +4,51 @@
   justify-content: center;
   margin-top: 32px;
 }
+
+.custom-btn {
+  font-weight: 400;
+  color: $white;
+  background-color: $black;
+  padding: 8px 20px;
+  border: 1px solid $white;
+  border-radius: 50px;
+  transition: 0.2s;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    background-color: $white;
+    transition: 0.2s;
+  }
+}
+
+.custom-btn-danger {
+  font-weight: 400;
+  color: red;
+  background-color: $black;
+  padding: 8px 20px;
+  border: 1px solid red;
+  border-radius: 50px;
+  transition: 0.2s;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    background-color: red;
+    transition: 0.2s;
+  }
+}
+
+.custom-btn-success {
+  font-weight: 400;
+  color: green;
+  background-color: $black;
+  padding: 8px 17px;
+  border: 1px solid green;
+  border-radius: 50px;
+  transition: 0.2s;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    background-color: green;
+    transition: 0.2s;
+  }
+}
