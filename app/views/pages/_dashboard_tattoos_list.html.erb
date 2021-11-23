@@ -10,6 +10,9 @@
       <div class="tattoo-list-element-infos">
         <div class="tattoo-list-element-name">
           <%= tattoo.name %>
+          <% if tattoo.on_home_slider %>
+             <i class="fas fa-star"></i>
+          <% end %>
         </div>
         <div class="tattoo-list-element-date">
           <%= tattoo.date.strftime("%d %B %Y") %>
@@ -20,11 +23,6 @@
         <div class="tattoo-list-element-description">
         <%= tattoo.description %>
         </div>
-      </div>
-      <div class="tattoo-list-element-onhomepage">
-        <% if tattoo.on_home_slider %>
-         <i class="fas fa-star"></i>
-        <% end %>
       </div>
       <div class="tattoo-list-element-actions">
         <%= link_to edit_tattoo_path(tattoo.id), class:"btn btn-success" do %>
