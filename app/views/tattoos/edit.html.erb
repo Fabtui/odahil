@@ -15,7 +15,10 @@
       <%= f.input :photos, as: :file, label:"Photo 3", input_html: { multiple: true } %>
       <%= f.input :photos, as: :file, label:"Photo 4", input_html: { multiple: true } %>
       <%= f.input :on_home_slider, label:"En page d'accueil" %>
-      <%= f.submit "Save", class: "btn btn-primary" %>
+      <div class="tattoo-new-button">
+        <%= f.submit "Save", class: "btn btn-primary" %>
+        <%= link_to "Cancel", pages_dashboard_path , class: "btn btn-danger" %>
+      </div>
     <% end %>
   </div>
 </div>

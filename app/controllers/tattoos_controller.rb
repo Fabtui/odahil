@@ -53,6 +53,8 @@ class TattoosController < ApplicationController
   end
 
   def create_style(ids)
+    styles = TattooStyle.where(tattoo_id: @tattoo.id)
+    styles.each(&:destroy)
     ids.reject!{ |element| element == "" }
     ids.each do |id|
       if TattooStyle.where(tattoo_id: @tattoo.id, style_id: id).empty?
