@@ -30,18 +30,19 @@
 
 .tattoo-list-element-infos {
   font-size: 16px;
-  width: 30%;
+  width: auto;
   min-width: 180px;
 }
 
 .tattoo-list-element-name {
   font-size: 20px;
   font-weight: 400;
+  position: relative;
 }
 
-.tattoo-list-element-onhomepage i {
-  margin-top: 8px;
-  font-size: 24px;
+.tattoo-list-element-name i {
+  // margin-top: 8px;
+  font-size: 16px;
   padding: 4px;
   color: goldenrod;
 }
@@ -49,6 +50,7 @@
 .tattoo-list-element-actions {
   margin: 8px;
   a {
+    margin: 8px;
     color: $white;
   }
 }
@@ -69,7 +71,7 @@
   .tattoo-list-element-infos {
     font-size: 12px;
     max-width: 100px;
-    min-width: 150px;
+    min-width: 166px;
   }
   .tattoo-list-element-description {
     display: none;
@@ -79,6 +81,7 @@
   }
   .tattoo-list-element-actions {
     margin: 0;
+    width: 42px;
     a {
       margin: 2px;
     }
