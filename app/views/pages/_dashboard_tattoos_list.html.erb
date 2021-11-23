@@ -32,10 +32,10 @@
         </div>
       </div>
       <div class="tattoo-list-element-actions">
-        <%= link_to edit_tattoo_path(tattoo.id), class:"btn btn-success" do %>
+        <%= link_to edit_tattoo_path(tattoo.id), class:"custom-btn-success" do %>
           <i class="fas fa-pencil-alt"></i>
         <% end %>
-        <%= link_to tattoo_path(tattoo.id), class:"btn btn-danger", method: 'delete', data: { confirm: 'Are you sure?' } do %>
+        <%= link_to tattoo_path(tattoo.id), class:"custom-btn-danger", method: 'delete', data: { confirm: 'Are you sure?' } do %>
           <i class="fas fa-trash"></i>
         <% end %>
       </div>
