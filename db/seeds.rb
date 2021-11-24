@@ -2,6 +2,7 @@ User.destroy_all
 Tattoo.destroy_all
 Art.destroy_all
 Style.destroy_all
+TattooStyle.destroy_all
 
 # ---------------------------------STYLES-------------------------------------------------------
 
@@ -129,6 +130,20 @@ flamme = Art.create!(
 flamme.photos.attach(io: File.open('app/assets/images/art8.jpg'), filename: 'flamme.jpg', content_type:'image/jpg')
 
 
+# ---------------------------------TATTOO STYLE----------------------------------------------
+
+TattooStyle.create!(tattoo_id: 1, style_id: 19)
+TattooStyle.create!(tattoo_id: 1, style_id: 28)
+TattooStyle.create!(tattoo_id: 2, style_id: 19)
+TattooStyle.create!(tattoo_id: 2, style_id: 22)
+TattooStyle.create!(tattoo_id: 3, style_id: 3)
+TattooStyle.create!(tattoo_id: 3, style_id: 6)
+TattooStyle.create!(tattoo_id: 4, style_id: 6)
+TattooStyle.create!(tattoo_id: 5, style_id: 6)
+TattooStyle.create!(tattoo_id: 5, style_id: 5)
+TattooStyle.create!(tattoo_id: 6, style_id: 19)
+TattooStyle.create!(tattoo_id: 6, style_id: 13)
+
 
 # --------------------------------------------------------------------------------------------------
 
@@ -136,3 +151,4 @@ p "#{User.count} users created"
 p "#{Tattoo.count} Tattoos created"
 p "#{Art.count} Artworks created"
 p "#{Style.count} Styles created"
+p "#{TattooStyle.count} Tattoo Styles created"
