@@ -52,7 +52,8 @@
     transition: 0.2s;
     margin-bottom: 180px;
     &:hover {
-      color: white;
+      color: $black;
+      background-color: $white;
       transform: scale(1.1);
       transition: 0.2s;
       text-decoration: none;

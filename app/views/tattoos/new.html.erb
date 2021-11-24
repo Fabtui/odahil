@@ -33,8 +33,12 @@
     </div>
   </div>
       <div class="tattoo-new-button">
-        <%= f.submit "Save", class: "custom-btn" %>
-        <%= link_to "Cancel", pages_dashboard_path , class: "custom-btn-danger" %>
+      <div class="custom-btn">
+        <%= f.submit "Save" %>
+      </div>
+      <div class="custom-btn-danger">
+        <%= link_to "Cancel", pages_dashboard_path %>
+      </div>
       </div>
     <% end %>
 </div>

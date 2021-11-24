@@ -62,7 +62,11 @@
 
 
 .tattoo-list-element-actions {
-  margin: 8px;
+  padding-bottom: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 60px;
   a {
     margin: 8px;
     color: $white;
@@ -73,18 +77,18 @@
   .tattoo-list-element-image {
     width: 100px;
     min-width: 50px;
-    height: 100px;
+    height: 110px;
   }
   .tattoo-list-element-name {
   font-size: 16px;
   }
   .tattoo-list-element-content {
     padding: 8px;
-    height: 100px;
+    height: 110px;
   }
   .tattoo-list-element-infos {
     font-size: 12px;
-    max-width: 100px;
+    max-width: 110px;
     min-width: 166px;
   }
   .tattoo-list-element-style {
