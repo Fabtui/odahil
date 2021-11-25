@@ -14,12 +14,10 @@
     object-fit: cover;
     transition: 0.2s;
     border-radius: 5px;
-    filter: grayscale(0.2);
   }
   img:hover {
     transform: scale(1.1);
     cursor: pointer;
-    filter: grayscale(0);
     transition: 0.2s;
   }
 }
