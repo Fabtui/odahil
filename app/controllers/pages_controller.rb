@@ -8,8 +8,8 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    @tattoos = Tattoo.all
-    @arts = Art.all
+    @tattoos = Tattoo.sorted_by_created_at
+    @arts = Art.sorted_by_created_at
   end
 
 end
