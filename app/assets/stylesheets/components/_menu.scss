@@ -189,6 +189,23 @@
   }
 }
 
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(400%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.nav-trigger {
+  animation: 1.7s cubic-bezier(.71,0,.32,.87) 0s 1 slideInRight;
+}
+
+
 @media screen and (max-width: 700px) {
   .nav-container {
     max-width: 270px;

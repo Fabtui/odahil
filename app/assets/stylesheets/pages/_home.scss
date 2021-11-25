@@ -21,7 +21,7 @@
   }
 }
 
-@keyframes slideInLeft {
+@keyframes slideInTitle {
   0% {
     transform: translateY(-200%);
     opacity: 0;
@@ -31,6 +31,7 @@
     opacity: 1;
   }
 }
+
 .home-page-content h1 {
-  animation: 1s ease-out 0s 1 slideInLeft;
+  animation: 2s cubic-bezier(.57,.01,.31,.88) 0s 1 slideInTitle;
 }
