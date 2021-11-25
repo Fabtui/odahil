@@ -2,7 +2,7 @@ class TattoosController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
-    @tattoos = Tattoo.all
+    @tattoos = Tattoo.sorted_by_created_at
   end
 
   def show
