@@ -1,0 +1,10 @@
+<div class="messages-container">
+  <% @contacts.each do |contact| %>
+  <div class="message-content">
+    <%= contact.name %>
+    <%= contact.email %>
+    <%= contact.created_at.strftime("%d %B %Y %H:%M")  %>
+    <%= contact.message %>
+  </div>
+  <% end %>
+</div>
