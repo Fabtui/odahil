@@ -1,5 +1,7 @@
 <% @arts.each do |art| %>
   <div class="tattoo-card">
+    <div class="spinner-border text-light" role="status">
+    </div>
     <div class="tattoo-card-content">
       <div class="tattoo-card-image lightbox-img">
         <%= cl_image_tag art.photos.first.key, crop: :fill, id:"tattoo-list-picture" %>
