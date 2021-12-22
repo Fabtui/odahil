@@ -1,7 +1,7 @@
 <div class="new-tattoo-container">
   <div class="new-tattoo-form">
-    <h1>Add a new artwork</h1>
     <%= simple_form_for @art do |f| %>
+    <h1>Add a new artwork</h1>
       <%= f.input :name %>
       <%= f.input :description, as: :text %>
       <% comment do %>
