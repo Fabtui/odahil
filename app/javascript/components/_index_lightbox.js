@@ -7,11 +7,9 @@ const indexLightbox = () => {
     const currentImg = previewBox.querySelector(".current-img");
     const totalImg = previewBox.querySelector(".total-img");
     const shadow = document.querySelector(".shadow");
-    console.log(lightboxImage[0])
 
     lightboxImage.forEach( image => {
       image.addEventListener('click', () => {
-        console.log(lightboxImage)
         const imageURL = image.querySelector("img").src;
         const closeIcon = previewBox.querySelector(".details-icon");
         previewImg.src = imageURL;
