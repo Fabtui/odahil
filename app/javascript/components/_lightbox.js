@@ -7,12 +7,6 @@ const lightbox = () => {
     * @property {string} url image displayed
     */
 
-    document.addEventListener('click', (e) => {
-      e.stopPropagation()
-      const parent = e.target
-      console.log(parent)
-    })
-
     class Lightbox {
 
       static init () {
@@ -36,6 +30,10 @@ const lightbox = () => {
         this.onKeyUp = this.onKeyUp.bind(this)
         document.body.appendChild(this.element)
         document.addEventListener('keyup', this.onKeyUp)
+        const doc = document.querySelector('.lightbox__container')
+        doc.addEventListener('click', (e) => {
+          this.close(e)
+        })
       }
 
       /**
@@ -79,7 +77,6 @@ const lightbox = () => {
        * @param {KeyboardEvent}
        */
       onKeyUp (e) {
-        console.log(e.key)
         if (e.key === 'Escape') {
           this.close(e)
         } else if (e.key === 'ArrowRight') {
