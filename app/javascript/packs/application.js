@@ -15,6 +15,7 @@ import { previewImageOnFileSelect } from "../components/_upload_photo_preview"
 import { indexLightbox } from "../components/_index_lightbox"
 import { slideInImages } from "../components/_slide_in_images"
 import { dashboardSelection } from "../components/_dashboard_selection"
+import { homeScroll } from '../components/_home_scroll'
 
 Rails.start()
 Turbolinks.start()
@@ -41,4 +42,5 @@ document.addEventListener('turbolinks:load', () => {
   indexLightbox();
   slideInImages();
   dashboardSelection();
+  homeScroll();
 });

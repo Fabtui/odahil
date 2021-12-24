@@ -1,7 +1,7 @@
 .profile-container {
   width: 100%;
   overflow: hidden;
-  padding: 100px 10% 20px 10%;
+  padding: 80px 10% 20px 10%;
   h1 {
     font-weight: 300;
   }
@@ -61,7 +61,6 @@
     }
   }
 }
-
 
   .align-left {
     // float: left;
@@ -132,7 +131,7 @@
 
 @media screen and (max-width: 750px) {
   .profile-container {
-    padding: 130px 10% 20px 10%;
+    padding: 60px 10% 20px 10%;
     img {
       max-width: 80vw;
     }
