@@ -3,7 +3,7 @@
     <div class="tattoo-list-element">
       <div class="tattoo-list-element-image lightbox-img">
       <% if tattoo.photos.first %>
-        <%= cl_image_tag tattoo.photos.first.key, crop: :fill, id:"tattoo-list-picture" %>
+        <%= cl_image_tag tattoo.photos.first.key, crop: :fill, id:"tattoo-dashboard-picture" %>
       <% end %>
       </div>
       <div class="tattoo-list-element-content">
