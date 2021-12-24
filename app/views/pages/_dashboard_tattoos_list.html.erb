@@ -10,8 +10,10 @@
       <div class="tattoo-list-element-infos">
         <div class="tattoo-list-element-name">
           <%= tattoo.name %>
-          <% if tattoo.on_home_slider %>
-             <i class="fas fa-star"></i>
+          <% comment do %>
+            <% if tattoo.on_home_slider %>
+              <i class="fas fa-star"></i>
+            <% end %>
           <% end %>
         </div>
         <div class="tattoo-list-element-style">

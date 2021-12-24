@@ -11,7 +11,9 @@
                                 order: [:day, :month, :year] %>
         <%= f.input :description, as: :text %>
         <%= f.association :styles %>
-        <%= f.input :on_home_slider, id:"new-tattoo-checkbox" %>
+        <% comment do %>
+          <%= f.input :on_home_slider, id:"new-tattoo-checkbox" %>
+        <% end %>
     </div>
     <div class="new-tattoo-form-section2">
         <div class="photo-upload-container">
