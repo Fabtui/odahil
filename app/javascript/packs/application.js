@@ -8,14 +8,15 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import { showMenu } from "../components/_show_menu"
-import { homeSwiper } from "../components/_home_swiper"
+// import { homeSwiper } from "../components/_home_swiper"
 import { homeAutoYScroll } from "../components/_home_auto_yscroll"
 import { dashboardLightbox } from "../components/_dashboard_lightbox"
 import { previewImageOnFileSelect } from "../components/_upload_photo_preview"
-import { indexLightbox } from "../components/_index_lightbox"
+// import { indexLightbox } from "../components/_index_lightbox"
 import { slideInImages } from "../components/_slide_in_images"
 import { dashboardSelection } from "../components/_dashboard_selection"
 import { homeScroll } from '../components/_home_scroll'
+import { lightbox } from '../components/_lightbox';
 
 Rails.start()
 Turbolinks.start()
@@ -35,12 +36,13 @@ import "bootstrap";
 
 document.addEventListener('turbolinks:load', () => {
   showMenu();
-  homeSwiper();
+  // homeSwiper();
   // homeAutoYScroll();
   dashboardLightbox();
   previewImageOnFileSelect();
-  indexLightbox();
+  // indexLightbox();
   slideInImages();
   dashboardSelection();
   homeScroll();
+  lightbox();
 });
