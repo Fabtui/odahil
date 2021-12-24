@@ -23,6 +23,15 @@ const dashboardLightbox = () => {
         })
       })
     })
+
+    if (shadow) {
+      shadow.addEventListener('click', () => {
+        previewBox.classList.remove("show");
+        shadow.style.display = "none";
+        document.querySelector("body").style.overflow = "scroll";
+      })
+    }
+
   }
 };
 
