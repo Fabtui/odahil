@@ -17,6 +17,7 @@ import { slideInImages } from "../components/_slide_in_images"
 import { dashboardSelection } from "../components/_dashboard_selection"
 import { homeScroll } from '../components/_home_scroll'
 import { lightbox } from '../components/_lightbox';
+import { initSelect2 } from '../components/_select2'
 
 Rails.start()
 Turbolinks.start()
@@ -45,4 +46,5 @@ document.addEventListener('turbolinks:load', () => {
   dashboardSelection();
   homeScroll();
   lightbox();
+  initSelect2();
 });
