@@ -10,7 +10,7 @@
                                 end_year: Date.today.year,
                                 order: [:day, :month, :year] %>
         <%= f.input :description, as: :text %>
-        <%= f.association :styles, input_html: { class: 'select2' }  %>
+        <%= f.association :styles, input_html: { class: 'select2' }, id: "tattoo-styles-form"  %>
         <% comment do %>
           <%= f.input :on_home_slider, id:"new-tattoo-checkbox" %>
         <% end %>
