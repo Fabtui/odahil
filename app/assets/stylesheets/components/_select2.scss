@@ -9,3 +9,13 @@
 .select2-results__options {
   color: black !important;
 }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  transform: translateY(50px);
+}
+
+.select2-selection--multiple {
+  background-color: gainsboro !important;
+  width: 100% !important;
+  max-height: 38px;
+}
