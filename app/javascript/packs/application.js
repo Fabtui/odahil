@@ -18,6 +18,7 @@ import { dashboardSelection } from "../components/_dashboard_selection"
 import { homeScroll } from '../components/_home_scroll'
 import { lightbox } from '../components/_lightbox';
 import { initSelect2 } from '../components/_select2'
+import { maiConfirmation } from '../components/_mail_confirmation'
 
 Rails.start()
 Turbolinks.start()
@@ -47,4 +48,5 @@ document.addEventListener('turbolinks:load', () => {
   homeScroll();
   lightbox();
   initSelect2();
+  maiConfirmation();
 });

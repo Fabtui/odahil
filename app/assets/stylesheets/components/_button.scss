@@ -52,3 +52,8 @@
     transition: 0.2s;
   }
 }
+
+.disabled-btn {
+  pointer-events: none;
+  opacity: 0.6;
+}
