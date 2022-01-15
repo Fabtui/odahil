@@ -1,5 +1,5 @@
 .back-image {
-  height: 30vh;
+  height: 40vh;
   background-image: url('krialid3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,6 +13,7 @@
 
 @media screen and (max-width: 750px) {
   .back-image {
+    height: 30vh;
     margin-top: 0px;
     margin-bottom: 0px;
   }
