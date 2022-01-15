@@ -19,6 +19,7 @@ import { homeScroll } from '../components/_home_scroll'
 import { lightbox } from '../components/_lightbox';
 import { initSelect2 } from '../components/_select2'
 import { maiConfirmation } from '../components/_mail_confirmation'
+import { backImageScroll } from '../components/_back_image'
 
 Rails.start()
 Turbolinks.start()
@@ -49,4 +50,5 @@ document.addEventListener('turbolinks:load', () => {
   lightbox();
   initSelect2();
   maiConfirmation();
+  backImageScroll();
 });

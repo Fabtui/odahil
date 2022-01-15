@@ -1,0 +1,19 @@
+.back-image {
+  height: 30vh;
+  background-image: url('krialid3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  width: 100vw;
+  transition: 0.1s;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  box-shadow: inset 0 0 4px black;
+}
+
+@media screen and (max-width: 750px) {
+  .back-image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}

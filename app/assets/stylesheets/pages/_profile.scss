@@ -1,7 +1,7 @@
 .profile-container {
   width: 100%;
   overflow: hidden;
-  padding: 80px 10% 20px 10%;
+  padding: 50px 10% 20px 10%;
   h1 {
     font-weight: 300;
   }
@@ -148,7 +148,7 @@
 
 @media screen and (max-width: 750px) {
   .profile-container {
-    padding: 60px 10% 20px 10%;
+    padding: 30px 10% 10px 10%;
     img {
       max-width: 80vw;
     }
