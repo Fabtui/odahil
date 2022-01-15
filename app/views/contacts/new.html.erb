@@ -7,12 +7,14 @@
   </div>
 
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true, label:"Nom" %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
+    <%= f.input :name, :required => true, label:"Nom", error: 'Veuillez rentrer votre nom' %>
+    <%= f.input :email, :required => true, error: 'Veuillez rentrer une adresse mail valide'  %>
+    <%= f.input :email_confirmation, :required => true, :label => "Confimer Email", :input_html => {:rel => "tooltip", :title => "Please enter your email address again to prevent typing errors"} %>
+    <div class="invalid-mail invalid-mail-hidden">Veuillez confirmer votre adresse mail</div>
+    <%= f.input :message, :as => :text, :required => true, error: 'Veuillez rentrer votre message'  %>
     <div id='contact-button'>
       <br>
-      <%= f.button :submit, 'Envoyer', :class=> "custom-btn" %>
+      <%= f.button :submit, 'Envoyer', :class=> "custom-btn disabled-btn", id:"new-contact-btn" %>
     </div>
   <% end %>
 </div>

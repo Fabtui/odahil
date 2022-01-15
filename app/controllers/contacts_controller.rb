@@ -2,7 +2,11 @@ class ContactsController < ApplicationController
   skip_before_action :authenticate_user!
 
   def index
-    @contacts = Contact.sorted_by_date
+    if user_signed_in?
+      @contacts = Contact.sorted_by_date
+    else
+      redirect_to :root
+    end
   end
 
   def new

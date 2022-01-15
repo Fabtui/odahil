@@ -1,8 +1,10 @@
 # class Contact < MailForm::Base
 class Contact < ApplicationRecord
-  attribute :name,      validate: true
-  attribute :email,     validate: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
-  attribute :message
+  validates :name, presence: true
+  # attribute :email, validate: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  validates :email, presence: true, format: { with: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i, message: " invalide" }
+  validates :message, presence: true
+  validates_confirmation_of :email, :on => :create, :message => "should match confirmation"
 
   scope :sorted_by_date, -> { order(created_at: :desc) }
 
