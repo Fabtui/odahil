@@ -17,8 +17,13 @@
 .home-page-content {
   width: 100%;
   h1 {
+    margin: 0 auto;
+    width: 400px;
     font-weight: 300;
     text-shadow: 0 0 4px black;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
