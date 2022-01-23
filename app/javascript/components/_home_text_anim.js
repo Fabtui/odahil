@@ -16,10 +16,11 @@ const homeTextAnim = () => {
       textDivs.forEach(textDiv => {
         const topWindow = window.pageYOffset
         const bottomWindow = window.pageYOffset + window.innerHeight
-        const middleDiv = textDiv.offsetHeight + (textDiv.offsetTop/2)
+        const middleDiv = textDiv.offsetTop + (textDiv.offsetHeight/2)
         const bottomDiv = textDiv.offsetHeight + textDiv.offsetTop
         if (bottomWindow > middleDiv) {
           textDiv.style.opacity = '1';
+          console.log('ok');
         }
         if (topWindow > bottomDiv) {
           textDiv.style.opacity = '0';
@@ -32,8 +33,9 @@ const homeTextAnim = () => {
         const topWindow = window.pageYOffset
         const bottomWindow = window.pageYOffset + window.innerHeight
         const topDiv = textDiv.offsetTop
+        const middleDiv = textDiv.offsetTop + (textDiv.offsetHeight/2)
         const bottomDiv = textDiv.offsetHeight + textDiv.offsetTop
-        if (topWindow < bottomDiv) {
+        if (topWindow < middleDiv) {
           textDiv.style.opacity = '1';
         }
         if (bottomWindow < topDiv) {
