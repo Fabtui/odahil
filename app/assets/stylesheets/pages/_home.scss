@@ -36,3 +36,9 @@
 .home-page-content h1 {
   animation: 2s cubic-bezier(.57,.01,.31,.88) 0s 1 slideInTitle;
 }
+
+@media screen and (max-width: 750px) {
+  .home-page-container {
+    height: 850px;
+  }
+}
