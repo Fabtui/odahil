@@ -20,7 +20,6 @@ const homeTextAnim = () => {
         const bottomDiv = textDiv.offsetHeight + textDiv.offsetTop
         if (bottomWindow > middleDiv) {
           textDiv.style.opacity = '1';
-          console.log('ok');
         }
         if (topWindow > bottomDiv) {
           textDiv.style.opacity = '0';

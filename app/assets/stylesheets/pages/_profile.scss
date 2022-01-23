@@ -34,7 +34,8 @@
     text-align: right;
     width: 100%;
     position: absolute;
-    bottom: 0px;
+    bottom: 12px;
+    right: 12px;
   }
   h2 {
     font-weight: 300;
@@ -131,7 +132,7 @@
     width: 30px;
     height: 30px;
     right: -16px;
-    bottom: -16px;
+    bottom: 0px;
     z-index:-1;
     border-right: 1px solid $white;
     border-bottom: 1px solid $white;
@@ -154,8 +155,10 @@
     img {
       max-width: 80vw;
       height: 400px;
-      margin: 0 35px;
     }
+  }
+  #odahil-profile-pic {
+    margin-left: 20px;
   }
   .profile-picture {
     margin-bottom: 20px;
