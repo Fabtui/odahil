@@ -82,7 +82,7 @@ const lightbox = () => {
         } else if (e.key === 'ArrowRight') {
           this.next(e)
         } else if (e.key === 'ArrowLeft') {
-          this.next(e)
+          this.prev(e)
         }
       }
 
