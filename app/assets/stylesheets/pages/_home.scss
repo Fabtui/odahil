@@ -27,6 +27,14 @@
   }
 }
 
+.shop-location {
+  margin-top: 8px;
+  display: flex;
+  i {
+    margin-right: 4px;
+  }
+}
+
 @keyframes slideInTitle {
   0% {
     transform: translateY(-200%);
