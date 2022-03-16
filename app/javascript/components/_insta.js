@@ -41,8 +41,8 @@ const insta = () => {
           'Accept': 'text/plain',
         },
       })
-      // }).catch(function (error) {
-      //   console.error(error);
+      }).catch(function (error) {
+        console.error(error);
       });
     });
 }

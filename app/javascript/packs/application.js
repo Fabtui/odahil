@@ -40,5 +40,5 @@ document.addEventListener('turbolinks:load', () => {
   maiConfirmation();
   backImageScroll();
   homeTextAnim();
-  // insta()
+  insta()
 });
