@@ -37,7 +37,7 @@ const insta = () => {
     // <p>${instaPost.likeCount}</p>
     // </a>`
     instaPosts.forEach(instaPost => {
-      const mutatedImageUrl = instaPost.imageUrl.replaceAll('&', '///')
+      const mutatedImageUrl = instaPost.imageUrl.replaceAll('&', 'zzzzz')
       const url = `/posts/new/?like=${instaPost.likeCount}&link=${instaPost.shortCode}&image=${mutatedImageUrl}`
       fetch(url, {
         method: 'GET',

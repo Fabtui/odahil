@@ -8,6 +8,7 @@
   <% @posts.each do |post| %>
     <h2><%= post.link %></h2>
     <h2><%= post.like %></h2>
+    <%= cl_image_tag post.photos.first.key, crop: :fill, id:"tattoo-list-picture" %>
   <% end %>
 </div>
 <%= render 'shared/home_profile' %>
