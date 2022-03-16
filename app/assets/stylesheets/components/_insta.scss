@@ -1,0 +1,94 @@
+.insta-container {
+  padding: 5vw 2vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.insta-content {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  img {
+    border-radius: 10px;
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+    box-shadow: 0 0 10px black;
+  }
+}
+
+.insta-details-likes {
+  position: absolute;
+  bottom: 44px;
+  right: 16px;
+}
+
+.insta-details-logo {
+  font-size: 44px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  a {
+    color: black;
+    transition: 0.2s;
+    &:hover {
+      font-size: 50px;
+      transition: 0.2s;
+    }
+  }
+}
+
+.insta-details-like-items {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: -16px;
+  right: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  i {
+    font-size: 52px;
+    z-index: 9;
+    color: black;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    z-index: 99;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.insta-details-like-items:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 750px) {
+  .insta-details-likes {
+    bottom: 52px;
+    right: 20px;
+  }
+  .insta-details-logo {
+    font-size: 24px;
+    top: 0px;
+    left: 6px;
+  }
+  .insta-details-like-items {
+    top: 4px;
+    left: -28px;
+    i {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 8px;
+    }
+  }
+}
