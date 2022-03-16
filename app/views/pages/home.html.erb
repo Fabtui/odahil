@@ -3,9 +3,15 @@
     <h1 id="home-title">ODAHIL TATTOO</h1>
   </div>
 </div>
-<div id='insta'></div>
+<div id='insta'>
+  <% @posts = Post.all %>
+  <% @posts.each do |post| %>
+    <h2><%= post.link %></h2>
+    <h2><%= post.like %></h2>
+    <%= cl_image_tag post.photos.first.key, crop: :fill, id:"tattoo-list-picture" %>
+  <% end %>
+</div>
 <%= render 'shared/home_profile' %>
-
 <%# <%= render 'shared/home_swiper' %> %>
 <div>
   <% flash.each do |key, value| %>
