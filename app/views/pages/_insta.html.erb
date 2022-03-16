@@ -1,0 +1,25 @@
+<div class='insta-container'>
+  <% @posts = Post.last(3) %>
+  <% @posts.each do |post| %>
+    <div class='insta-content'>
+      <%= cl_image_tag post.photos.first.key, crop: :fill, id:"tattoo-list-picture" %>
+    <div class="insta-details-logo">
+      <%= link_to "https://www.instagram.com/p/#{post.link}", target:"_blank" do %>
+        <i class="fab fa-instagram"></i>
+      <% end %>
+    </div>
+    <div class="insta-details-likes">
+      <div class="insta-details-like-items">
+        <%= link_to "https://www.instagram.com/p/#{post.link}", target:"_blank" do %>
+          <i class="fas fa-heart"></i>
+        <% end %>
+      </div>
+      <div class="insta-details-like-items">
+        <%= link_to "https://www.instagram.com/p/#{post.link}", target:"_blank" do %>
+          <h2 class="insta-likes"><%= post.like %></h2>
+        <% end %>
+      </div>
+    </div>
+    </div>
+  <% end %>
+</div>
