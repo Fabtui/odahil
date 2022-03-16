@@ -12,10 +12,6 @@ const insta = () => {
   };
   axios.request(options).then(function (response) {
     let instaPosts = []
-    // console.log(response.data.edge_owner_to_timeline_media.edges);
-    // console.log(response.data.edge_owner_to_timeline_media.edges[0].node.edge_liked_by.count);
-    // console.log(response.data.edge_owner_to_timeline_media.edges[0].node.shortcode);
-    // console.log(response.data.edge_owner_to_timeline_media.edges[0].node.display_url);
     const instaPost1 = { imageUrl: response.data.edge_owner_to_timeline_media.edges[0].node.display_url,
                         shortCode: response.data.edge_owner_to_timeline_media.edges[0].node.shortcode,
                         likeCount: response.data.edge_owner_to_timeline_media.edges[0].node.edge_liked_by.count
@@ -45,8 +41,8 @@ const insta = () => {
           'Accept': 'text/plain',
         },
       })
-      }).catch(function (error) {
-        console.error(error);
+      // }).catch(function (error) {
+      //   console.error(error);
       });
     });
 }

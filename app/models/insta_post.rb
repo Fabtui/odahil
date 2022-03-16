@@ -1,2 +1,0 @@
-class InstaPost < ApplicationRecord
-end

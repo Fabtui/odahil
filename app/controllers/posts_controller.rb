@@ -10,14 +10,14 @@ class PostsController < ApplicationController
         image_url = params[:image].gsub('zzzzz', '&')
         @post.image = image_url
         require 'open-uri'
-        open("./app/assets/#{params[:link]}.jpeg", 'wb') do |file|
+        open("./app/assets/images/insta-#{params[:link]}.jpeg", 'wb') do |file|
           file << open(image_url).read
         end
-        @post.photos.attach(io: File.open("app/assets/images/#{params[:link]}.jpeg"), filename: "#{params[:link]}.jpg", content_type:'image/jpg')
+        @post.photos.attach(io: File.open("app/assets/images/insta-#{params[:link]}.jpeg"), filename: "#{params[:link]}.jpg", content_type:'image/jpg')
         @post.save
       end
-      raise
     end
+    redirect_to :root
   end
 
 end
