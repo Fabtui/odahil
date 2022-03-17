@@ -1,11 +1,11 @@
 <div class="shop-page-container">
-  <h2 class='text-center'>LE SHOP</h2>
+  <h2 class='text-center title'>LE SHOP</h2>
   <div class="shop-container">
     <div class="shop-picture-container">
       <%= image_tag('krysalid-shop.png') %>
     </div>
     <div class="shop-content">
-      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae a cupiditate laudantium aliquid ea, rerum, ipsam sit quas numquam expedita, quibusdam voluptates rem culpa hic minus possimus reiciendis quidem cumque?</h4>
+      <h4>Atelier Krysalid: Les artistes, de l’Atelier Krysalid, sont principalement artistes – tatoueurs. Pour pratiquer leur art dans les meilleures conditions, l’Atelier est principalement un salon privé, où l’accès devient réservé pour les clients de nos artistes – résidents.</h4>
       <div class="shop-content-location">
       <h2><a href="https://atelierkrysalid.fr/" target="_blanck"> ATELIER KRYSALID </a><br>
         Coworking pour artistes <br>
@@ -16,11 +16,11 @@
             </div>
           </a>
         </h2>
+        <div class="contact-link">
+          <%= link_to "Prendre rendez-vous", new_contact_path, id:"contact-link" %>
+        </div>
       </div>
       <div class="mapbox-container">
-      </div>
-      <div class="contact-link">
-        <%= link_to "Prendre rendez-vous", new_contact_path, id:"contact-link" %>
       </div>
     </div>
   </div>
