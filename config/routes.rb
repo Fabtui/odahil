@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'pages/profile'
   get 'pages/dashboard'
+  get 'pages/shop'
   resources "contacts", only: %i[new create index]
 
   resources :tattoos
