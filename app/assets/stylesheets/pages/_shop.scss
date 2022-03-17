@@ -1,5 +1,5 @@
 .shop-page-container {
-  padding: 10%;
+  padding: 10% 10% 0% 10%;
   padding-top: 70px;
   .title {
     font-size: 40px;
@@ -68,6 +68,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .shop-page-container {
+    padding-top: 70px;
+    padding: 10%;
+  }
   .shop-container {
     grid-template-columns:1fr;
   }
@@ -83,10 +87,6 @@
   .shop-picture-container {
     max-height: 400px;
     max-width: 80vw;
-    img {
-      // max-width: 80vw;
-      // max-height: 400px;
-    }
   }
   .shop-content {
     max-width: 80vw;
