@@ -1,0 +1,31 @@
+.shop-page-container {
+  padding: 5% 10%;
+}
+
+.shop-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.shop-picture-container {
+  overflow: hidden;
+  img {
+    border-radius: 10px;
+    // object-fit: cover;
+  }
+}
+
+.mapbox-container {
+  border-radius: 10px;
+  width: 100%;
+  height: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .shop-page-container {
+    padding: 10%;
+  }
+  .shop-container {
+    grid-template-columns:1fr;
+  }
+}
