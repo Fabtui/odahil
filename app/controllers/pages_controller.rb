@@ -7,6 +7,9 @@ class PagesController < ApplicationController
   def profile
   end
 
+  def shop
+  end
+
   def dashboard
     @tattoos = Tattoo.sorted_by_created_at
     @arts = Art.sorted_by_created_at
