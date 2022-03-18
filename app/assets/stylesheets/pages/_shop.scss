@@ -108,22 +108,24 @@
       margin-bottom: 16px;
     }
   }
+  .contact-link {
+    margin: 24px 0;
+    a {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
   .shop-content-location {
-  display: block;
+    display: block;
     h2 {
       font-size: 16px;
     }
     a {
       font-size: 16px;
     }
-    .contact-link a {
-      margin: 32px 0 0 20px;
-      font-size: 16px;
-      padding: 16px 8px;
-    }
   }
   .mapbox-container {
-    width: 100%;
+    max-width: 80vw;
     height: 400px;
     margin-bottom: 32px;
   }
