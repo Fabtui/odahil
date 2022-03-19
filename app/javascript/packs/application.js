@@ -17,7 +17,7 @@ import { maiConfirmation } from '../components/_mail_confirmation'
 import { backImageScroll } from '../components/_back_image'
 import { homeTextAnim } from '../components/_home_text_anim'
 import { insta } from '../components/_insta'
-import { mapBox } from '../controllers/mapbox_controller'
+import { mapBox } from '../components/_mapbox'
 
 Rails.start()
 Turbolinks.start()
