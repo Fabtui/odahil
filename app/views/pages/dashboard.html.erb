@@ -2,6 +2,11 @@
   <div class="dashboard-title">
     <h1>ADMIN DASHBOARD</h1>
   </div>
+  <div id="visitcount">
+    <%= link_to visits_index_path do %>
+      Visit count: <%= Visit.all.count %>
+    <% end %>
+  </div>
   <div class="dashboard-selection">
     <div class="dashboard-selection-button select-tattoos active">Tattoos</div>
     <div class="dashboard-selection-button select-arts">Arts</div>

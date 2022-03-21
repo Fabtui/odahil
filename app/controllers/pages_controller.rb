@@ -2,6 +2,9 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[home profile shop]
 
   def home
+    visit = Visit.new
+    visit.date = Time.now
+    visit.save
   end
 
   def profile

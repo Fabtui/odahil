@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'visits/index'
   get 'posts/new'
   post 'insta_posts/create'
   get 'index/new'
