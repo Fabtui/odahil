@@ -1,16 +1,8 @@
-  <table class="table table-dark">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Date</th>
-      </tr>
-    </thead>
-    <tbody>
-  <% @visits.each do |visit| %>
-    <tr>
-      <th scope="row"><%= visit.id %></th>
-      <td><%= visit.date %></td>
-    </tr>
+<div class="back-link">
+  <%= link_to :back do %>
+    <i class="fas fa-arrow-left"></i>
   <% end %>
-    </tbody>
-  </table>
+</div>
+<div class="visit-chart">
+  <%= line_chart @visits.group(:date).count %>
+</div>

@@ -27,7 +27,7 @@ gem "select2-rails"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-
+gem "chartkick"
 gem 'devise'
 gem 'mail_form'
 gem 'cloudinary', '~> 1.16.0'
