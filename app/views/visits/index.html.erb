@@ -1,0 +1,16 @@
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+  <% @visits.each do |visit| %>
+    <tr>
+      <th scope="row"><%= visit.id %></th>
+      <td><%= visit.date %></td>
+    </tr>
+  <% end %>
+    </tbody>
+  </table>
