@@ -1,6 +1,7 @@
 const backImageScroll = () => {
   // when bottom of window hit bottom of div backgroud go down depending on the scroll value
   const backImage = document.querySelector('.back-image')
+  
   if (backImage) {
     const backImageTop = backImage.offsetTop;
     const backImageBottom = backImageTop + backImage.offsetHeight;
